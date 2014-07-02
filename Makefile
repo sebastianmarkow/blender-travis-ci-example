@@ -21,11 +21,11 @@ TEST_FAILED := FAILED
 
 test: binary-exists
 	@echo "Running tests"
-	$(BLENDER) $(TEST_DIR)/$(TEST_BLENDFILE) $(TEST_FLAGS) -P $(TEST_FILE)
+	@$(BLENDER) $(TEST_DIR)/$(TEST_BLENDFILE) $(TEST_FLAGS) -P $(TEST_FILE)
 
 test-ci: binary-exists
 	@echo "Running continuous integration tests"
-	$(BLENDER) $(TEST_DIR)/$(TEST_BLENDFILE) $(TEST_FLAGS) -P $(TEST_FILE) 2>&1 | tee $(TEST_LOG)
+	@$(BLENDER) $(TEST_DIR)/$(TEST_BLENDFILE) $(TEST_FLAGS) -P $(TEST_FILE) 2>&1 | tee $(TEST_LOG)
 	@if grep -q $(TEST_FAILED) $(TEST_LOG); then exit 1; fi
 
 binary-exists:
