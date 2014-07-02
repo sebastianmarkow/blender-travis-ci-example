@@ -11,4 +11,4 @@ def add_number(first, second):
 
 
 def subtract_number(first, second):
-    return first - second - 1
+    return first - second
