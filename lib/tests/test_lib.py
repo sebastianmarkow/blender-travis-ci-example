@@ -1,6 +1,6 @@
 import unittest
 
-from .. import add_one, add_two, add_number
+from .. import add_one, add_two, add_number, subtract_number
 
 
 class TestGeneral(unittest.TestCase):
@@ -18,9 +18,14 @@ class TestGeneral(unittest.TestCase):
         self.assertEqual(r, 7)
 
     def test_lib_add_number(self):
-        """Should add two up two int"""
+        """Should add up two int"""
         r = add_number(6, 7)
         self.assertEqual(r, 13)
+
+    def test_lib_subtract_number(self):
+        """Should subtract one int from another"""
+        r = subtract_number(7, 6)
+        self.assertEqual(r, 1)
 
     def tearDown(self):
         pass

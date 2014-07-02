@@ -8,3 +8,7 @@ def add_two(number):
 
 def add_number(first, second):
     return first + second
+
+
+def subtract_number(first, second):
+    return first - second - 1
