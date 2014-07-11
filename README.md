@@ -1,6 +1,7 @@
-travis-blender-example
-======================
+blender-travis-ci-example
+=========================
 
-[![Build Status](https://travis-ci.org/sebastianmarkow/travis-blender-example.svg?branch=master)](https://travis-ci.org/sebastianmarkow/travis-blender-example)
+[![Build Status](http://img.shields.io/travis/sebastianmarkow/blender-travis-ci-example.svg?style=flat)](https://travis-ci.org/sebastianmarkow/blender-travis-ci-example)
+![MIT License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)
 
 Example repo for continuous integration tests with blender using travis-ci.
